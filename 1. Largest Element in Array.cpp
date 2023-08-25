@@ -1,3 +1,5 @@
+//Largest element in the array
+//Solution 1: Sorting (Brute Force - Time complexity= O(nlog(n)) )
 // #include<iostream>
 // #include<vector>
 // using namespace std;
@@ -14,6 +16,7 @@
 // return 0;
 // }
 
+//Solution 2: Using a max variable ( Recursive solution - Time complexity= O(1) )
 #include<iostream>
 using namespace std;
 
