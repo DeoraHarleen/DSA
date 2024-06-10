@@ -7,7 +7,7 @@ Output:
   *
 
 */
-void Pattern8(int n) {
+void ReverseStarTriangle(int n) {
     // Write your code here.
     for(int i=0;i<n;i++)
     {
