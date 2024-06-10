@@ -7,7 +7,7 @@ Output:
 *****
 
 */
-void Pattern7(int n) {
+void Star Triangle(int n) {
     // Write your code here.
     for(int i=0;i<n;i++)
     {
