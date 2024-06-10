@@ -6,7 +6,7 @@ Output:
 *
 
 */
-void Pattern5(int n) {
+void Seeding(int n) {
 	// Write your code here.
 	for(int i=1;i<=n;i++)
 	{
@@ -18,7 +18,7 @@ void Pattern5(int n) {
 	}
 }
 //method 2 using n-i+1
-void Pattern5(int n) {
+void Seeding(int n) {
 	// Write your code here.
 	for(int i=1;i<=n;i++)
 	{
