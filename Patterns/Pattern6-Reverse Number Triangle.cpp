@@ -6,7 +6,7 @@ Output:
 1 2
 1
 */
-void StarTriangle(int n) {
+void ReverseNumberTriangle(int n) {
     // Write your code here.
     for(int i=n;i>=1;i--)
     {
@@ -18,7 +18,7 @@ void StarTriangle(int n) {
     }
 }
 // or using n-i+1
-void StarTriangle(int n) {
+void ReverseNumberTriangle(int n) {
     // Write your code here.
     for(int i=1;i<=n;i++)
     {
