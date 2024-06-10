@@ -11,7 +11,7 @@ Output:
   *
 
 */
-void nStarDiamond(int n) {
+void StarDiamond(int n) {
     // Write your code here.
     for(int i=0;i<n;i++)
     {
