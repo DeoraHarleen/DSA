@@ -5,7 +5,7 @@ Output:
 1 2 
 1 2 3
 */
-void Pattern3(int n) {
+void NTriangles(int n) {
 	// Write your code here
 	for(int i=1;i<=n;i++)
 	{
