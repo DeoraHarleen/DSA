@@ -7,7 +7,7 @@ Output:
 *****
 
 */
-void Pattern6(int n) {
+void Pattern7(int n) {
     // Write your code here.
     for(int i=0;i<n;i++)
     {
