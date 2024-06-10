@@ -6,7 +6,7 @@ Output:
 2 2 
 3 3 3
 */
-void Pattern4(int n) {
+void Triangle(int n) {
 	// Write your code here
 	for(int i=1;i<=n;i++)
 	{
