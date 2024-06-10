@@ -19,13 +19,12 @@ void numberCrown(int n) {
         for(int j=1;j<=space;j++)
         {
             cout<<" ";
-            
+            space = space-2;
         }
         for(int j=i;j>=1;j--)
         {
             cout<<j<<" ";
         }
         cout<<endl;
-        space =space-2;
     }  
 }
