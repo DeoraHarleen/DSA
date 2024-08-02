@@ -25,3 +25,5 @@ int main()
     int element=pascalTriangle(r,c);
     cout<<" "<<element<<endl;
 }
+//TC: O(r)
+//SC: O(1)
