@@ -21,7 +21,7 @@ void insertAtTail(Node* &tail, int data)
     tail=temp;
 }
 
-void insertAtPosition(Node* &head, int position, int data)
+void insertAtPosition(Node* &head, Node* &tail, int position, int data)
 {
     Node* temp=new Node(data);
     
@@ -76,11 +76,11 @@ int main()
     insertAtTail(tail, 20);
     insertAtTail(tail, 30);
     insertAtTail(tail, 40);
-    insertAtPosition(head,3,25);
+    insertAtPosition(head,tail, 3,25);
 
     //Checking for empty list
     // Node* head=NULL;
     // Node* tail=NULL;
-    // insertAtPosition(head,3,25);
+    // insertAtPosition(head,tail, 3,25);
     // print(head);
 }
