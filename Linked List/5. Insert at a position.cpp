@@ -76,7 +76,10 @@ int main()
     insertAtTail(tail, 20);
     insertAtTail(tail, 30);
     insertAtTail(tail, 40);
+    print(tail);
     insertAtPosition(head,tail, 3,25);
+    print(head);
+    print(tail);
 
     //Checking for empty list
     // Node* head=NULL;
