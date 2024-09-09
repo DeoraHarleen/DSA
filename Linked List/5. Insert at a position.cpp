@@ -25,7 +25,7 @@ void insertAtPosition(Node* &head, int position, int data)
 {
     Node* temp=new Node(data);
     
-    if(position==1)
+    if(position==1) //Special Case: Insertion at head
     {
         temp->next=head;
         head=temp;
@@ -33,8 +33,8 @@ void insertAtPosition(Node* &head, int position, int data)
     }
     
     Node* temp1=head;
-    int count=1;
-    while(temp1!=NULL&&count<position-1)
+    int count=1; //Counter to keep track of position
+    while(temp1!=NULL&&count<position-1) //for inserting at pos, we will traverse till pos-1 node
     {
         temp1=temp1->next;
         count++;
