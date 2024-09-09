@@ -47,6 +47,12 @@ void insertAtPosition(Node* &head, int position, int data)
     {
         temp->next=temp1->next;
         temp1->next=temp;
+
+        //Inserting after tail and updating tail pointer to point to last node (which is being added)
+        if(temp->next==NULL)
+        {
+            tail=temp;
+        }
     }
 }
 
