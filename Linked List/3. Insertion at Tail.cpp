@@ -14,11 +14,20 @@ class Node
   }
 };
 
-void insertAtTail(Node* &tail,int data)
+void insertAtTail(Node* &head, Node* &tail,int data)
 {
-    Node* temp=new Node(data);
-    tail->next=temp;
-    tail=temp;
+    if(tail==NULL)
+    {
+      Node* temp=new Node(data);
+      tail=temp;
+      head=temp;
+    }
+    else
+    {
+      Node* temp=new Node(data);
+      tail->next=temp;
+      tail=temp;
+    }
 }
 
 void print(Node* &head)
@@ -34,15 +43,17 @@ void print(Node* &head)
 
 int main()
 {
-    Node* node1=new Node(10);
-    Node* head=node1;
-    Node* tail=node1;
+    // Node* node1=new Node(10);
+    // Node* head=node1;
+    // Node* tail=node1;
+    Node* head=NULL; //head is NULL case
+    Node* tail=NULL; //tail is NULL case
     
     print(head);
     
-    insertAtTail(tail,12);
+    insertAtTail(head, tail,12);
     print(head);
     
-    insertAtTail(tail,15);
+    insertAtTail(head, tail,15);
     print(head);
 }
