@@ -14,11 +14,21 @@ class Node
   }
 };
 
-void insertAtTail(Node* &tail, int data)
+void insertAtTail(Node* &head, Node* &tail, int data)
 {
-    Node* temp=new Node(data);
-    tail->next=temp;
-    tail=temp;
+    if(tail==NULL)
+    {
+        Node* temp=new Node(data);
+        head=temp;
+        tail=temp;
+    }
+    else
+    {
+        Node* temp=new Node(data);
+        tail->next=temp;
+        tail=temp;
+    }
+   
 }
 
 void insertAtPosition(Node* &head, Node* &tail, int position, int data)
@@ -73,17 +83,17 @@ int main()
     Node* head=node1;
     Node* tail=node1;
     
-    insertAtTail(tail, 20);
-    insertAtTail(tail, 30);
-    insertAtTail(tail, 40);
+    //Checking for empty list
+    // Node* head=NULL;
+    // Node* tail=NULL;
+    
+    insertAtTail(head, tail, 20);
+    insertAtTail(head, tail, 30);
+    insertAtTail(head, tail, 40);
     print(tail);
     insertAtPosition(head,tail, 3,25);
     print(head);
     print(tail);
 
-    //Checking for empty list
-    // Node* head=NULL;
-    // Node* tail=NULL;
-    // insertAtPosition(head,tail, 3,25);
-    // print(head);
+   
 }
