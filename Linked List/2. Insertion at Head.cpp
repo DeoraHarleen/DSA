@@ -17,9 +17,17 @@ class Node
 
 void insertAtHead(Node* &head, int data)
 {
+  if(head==NULL)
+  {
+    Node* temp=new Node(d);
+    head=temp; 
+  }
+  else
+  {
     Node* temp=new Node(data);
     temp->next=head;
     head=temp;
+  }
 }
 
 void print(Node* &head)
@@ -37,6 +45,7 @@ int main()
 {
     Node* node1=new Node(10);
     Node* head=node1;
+    //Node*head=NULL //empty linkedlist case
     
     print(head);
     
