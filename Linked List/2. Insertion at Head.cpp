@@ -15,12 +15,13 @@ class Node
   }
 };
 
-void insertAtHead(Node* &head, int data)
+void insertAtHead(Node* &head, Node* &tail, int data)
 {
   if(head==NULL)
   {
-    Node* temp=new Node(d);
+    Node* temp=new Node(data);
     head=temp; 
+    tail=temp;
   }
   else
   {
@@ -43,16 +44,17 @@ void print(Node* &head)
 
 int main()
 {
-    Node* node1=new Node(10);
-    Node* head=node1;
-    //Node*head=NULL //empty linkedlist case
+    // Node* node1=new Node(10);
+    // Node* head=node1;
+    Node* head=NULL; //empty linkedlist case
+    Node* tail=NULL;
     
     print(head);
     
-    insertAtHead(head,12);
+    insertAtHead(head,tail,12);
     print(head);
     
-    insertAtHead(head,15);
+    insertAtHead(head,tail,15);
     print(head);
     return 0;
 }
